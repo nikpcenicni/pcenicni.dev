@@ -30,6 +30,9 @@ html {
 .topnav {
   background-color: #333;
   overflow: hidden;
+  position: relative;
+  top: 0;
+
 }
 
 /* Style the links inside the navigation bar */
@@ -90,4 +93,21 @@ html {
     width: 100%; 
     color: white;
     text-align: center;
+}
+
+
+.imagecropper {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+  }
+
+.circlify {
+  display: inline;
+  margin: 0 auto;
+  height: 200%;
+  width: auto;
+  border: 2px solid black;
 }
