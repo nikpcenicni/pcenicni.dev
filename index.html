@@ -22,17 +22,19 @@
         <![endif]-->
 
         
-            <!-- Top Navigation Menu -->
-            <div class="topnav">
-            <a href="index.html" class="active">Home</a>
-            <a href="gallery/index.html">Gallery</a>
-            <a href="archive/index.html">Archive</a>
-            <a href="about.html">About</a>
-            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-            <a href="javascript:void(0);" class="icon" onclick="shownavmenu()">
-                <i class="fa fa-bars"></i>
-            </a>
-            </div>
+        <!-- Top Navigation Menu -->
+        <div class="topnav" id="navbar">
+        <a href="index.html" class="active">Home</a>
+        <a href="gallery/index.html">Gallery</a>
+        <a href="archive/index.html">Archive</a>
+        <a href="about.html">About</a>
+        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+        <a href="javascript:void(0);" class="icon" onclick="shownavmenu()">
+            <i class="fa fa-bars"></i>
+        </a>
+        </div>
+
+        <!-- header of page -->
         <div class="titlebanner" id="homebanner">        
             <h1>Nikholas Pcenicni</h1>
             <p>Full Stack Web Developer</p>
@@ -40,7 +42,7 @@
 
         <script>
             function shownavmenu() {
-                var x = document.getElementById("topnav");
+                var x = document.getElementById("navbar");
                 if (x.className === "topnav") {
                     x.className += " responsive";
                 } else {
