@@ -11,18 +11,28 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
 
     <body>
+
+
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
+        <script src="functions.js" async defer></script>
+        
         <div class="topnav" id="myTopnav">
             <ul>          
                 <li><a href="index.html" class="active">Home</a></li> 
+                <div id="mylinks">
                 <li><a href="gallery/index.html">Gallery</a></li>
                 <li><a href="archive/index.html">Archive</a></li>
-                <li style ="float: right;"><a href="about.html">About</a></li>
+                <li><a href="about.html">About</a></li>
+                </div>
+                <a href="javascript:void(0);" class="icon" onclick="shownavmenu()">
+                    <i class="fa fa-bars"></i>
+                  </a>
             </ul>
         </div>
         <div class="titlebanner" id="homebanner">        
