@@ -71,7 +71,8 @@ html {
     display: block;
   }
   .circleify {
-    width: 50%;
+    width: 100px;
+    align-content: center;
   }
 }
 
@@ -102,4 +103,5 @@ html {
 .circlify {
     border-radius: 50%;
     width: 200px;
+    margin-top: 1em;
   }
