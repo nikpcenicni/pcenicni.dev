@@ -70,6 +70,9 @@ html {
     float: right;
     display: block;
   }
+  .circleify {
+    width: 50%;
+  }
 }
 
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
@@ -96,18 +99,7 @@ html {
 }
 
 
-.imagecropper {
-    width: 200px;
-    height: 200px;
-    position: relative;
-    overflow: hidden;
-    border-radius: 50%;
-  }
-
 .circlify {
-  display: inline;
-  margin: 0 auto;
-  height: 200%;
-  width: auto;
-  border: 2px solid black;
-}
+    border-radius: 50%;
+    width: 200px;
+  }
