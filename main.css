@@ -23,25 +23,26 @@ time, mark, audio, video {
 }
 
 body {
-  --text-color: black;
+  --text-color: #242529;
   --bkg-color: #DEEAF6;
   --light-shadow: #F3F9FF;
   --dark-shadow: #BECBD8;
 }
 
 body.dark-theme {
-  --text-color: #eee;
-  --text-color: black;
+  --text-color: #BECBD8;
   --bkg-color: #1A1B1E;
   --light-shadow: #242529;
   --dark-shadow: #151518;
 }
-
+body * {
+  color: var(--text-color);
+}
 body {
  color: var(--text-color);
  background-color:  var(--bkg-color);
 }
-body .object, a, #darkmode{
+body .object, a, #darkmode, #profile{
   color: var(--text-color);
   background-color: var(--bkg-color);
   box-shadow: 10px 10px 12px 0 var(--dark-shadow),
@@ -128,12 +129,9 @@ li {
   scale: 200%;
 }
 
-
-.circlify {
+.circlify {margin-top:1em;
     border-radius: 50%;
     width: 200px;
-    margin-top: 1em;
-    border: 2px solid black; 
   }
 
 .linkicons {
@@ -143,7 +141,7 @@ li {
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 600px) {
-  .topnav {width: 100%; margin-left:0}
+  .topnav {height: 17%; width: 100%; margin-left:0}
   .topnav a:first-child{float:left; width:50%; margin-left:2%;}
   .topnav a:not(:first-child) {display: none;}
   .topnav a.icon {
@@ -153,13 +151,18 @@ li {
   .topnav a.icon#darkmode{
     width: 20%;
   }
-  .about {
+  .body * {
     margin:0;
     margin-left:2%;
   }
-  .about.circleify {
-    width: 75%;
-    align-content: center;
+  .circlify {
+    border-radius: 50%;
+    width: 150px;
+  }
+  .object {
+    width: 92%;
+    margin-left:4%;
+    margin-right:4%;
   }
 
 }
