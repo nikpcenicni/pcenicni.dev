@@ -11,6 +11,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="main.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -19,22 +21,38 @@
         
         <!-- Top Navigation Menu -->
         <div class="topnav" id="navbar">
-        <a href="index.html" class="active">Home</a>
+        <a href="index.html">Home</a>
         <a href="gallery/index.html">Gallery</a>
-        <a href="archive/index.html">Archive</a>
-        <a href="about.html">About</a>
+        <a href="archive/index.html">Archive</a> 
+        <a href="about.html" class="active" >About</a>        
+        <a href="javascript:void(0);" class="icon" id="darkmode" onclick="darkmode()">
+            <i class="fa fa-moon-o"></i>
+        </a>
         <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
         <a href="javascript:void(0);" class="icon" onclick="shownavmenu()">
             <i class="fa fa-bars"></i>
         </a>
-        </div>
+     </div>
 
 
         <!-- header of page -->
-        <div class="titlebanner" id="homebanner">   
+        <div class="object" id="about">  
             <div class="imagecropper"><img class="circlify" src="images/nik.jpeg" alt="Headshot of Nik"></img></div>              
             <h1>Nikholas Pcenicni</h1>
-            <p>Full Stack Web Developer</p>
+ 
+            <h3>About Me</h3>
+            <ul>
+                <li><i class = "fa fa-graduation-cap" aria-hidden="true"></i>&nbsp;Bachelors of Computer Science</li>
+                <li><i class = "fa fa-building" aria-hidden="true"></i>&nbsp;Laurentian University</li>
+            </ul>
+
+            <h3>Contact Me</h3>
+            <ul class="linkIcons">
+                <li><a href = "mailto:nik@pcenicni.dev"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+                <li><a href = "https://www.instagram.com/nik.pcenicni/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                <li><a href = "https://github.com/nikpcenicni/"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+            </ul>
+
         </div>
         
 

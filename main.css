@@ -22,39 +22,72 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 
+body {
+  --text-color: black;
+  --bkg-color: #DEEAF6;
+  --light-shadow: #F3F9FF;
+  --dark-shadow: #BECBD8;
+}
+
+body.dark-theme {
+  --text-color: #eee;
+  --text-color: black;
+  --bkg-color: #1A1B1E;
+  --light-shadow: #242529;
+  --dark-shadow: #151518;
+}
+
+body {
+ color: var(--text-color);
+ background-color:  var(--bkg-color);
+}
+body .object, a{
+  color: var(--text-color);
+  background-color: var(--bkg-color);
+  box-shadow: 10px 10px 12px 0 var(--dark-shadow),
+  -8px -8px 10px 0 var(--light-shadow);
+}
+
 html {
-    background-color: rgb(79, 199, 173);
+    background-color: light;
+    font-family: 'Roboto', sans-serif;
 }
 
 /* Add a black background color to the top navigation */
 .topnav {
-  background-color: #333;
+  background: transparent;
   overflow: hidden;
-  position: relative;
+  position: absolute;
   top: 0;
-
+  width: 100%;
+  height: 10%;
+  margin-left: 1%;
 }
 
 /* Style the links inside the navigation bar */
 .topnav a {
   float: left;
+  width: 20%;
+  margin-top: 5px;
+  margin-left: 10px;
   display: block;
-  color: #f2f2f2;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
+  border-radius: .7em;
+
 }
 
 /* Change the color of links on hover */
 .topnav a:hover {
-  background-color: #ddd;
+  background-color: rgb(255, 255, 255);
   color: black;
 }
 
 /* Add an active class to highlight the current page */
 .topnav a.active {
-  background-color: #04AA6D;
+  background-color: #0381ca;
   color: white;
 }
 
@@ -62,17 +95,68 @@ html {
 .topnav .icon {
   display: none;
 }
+.topnav #darkmode {
+  display: block;
+  width: 10%;
+}
+
+
+
+.object {
+    margin: 0;
+    margin-top: 5em; 
+    width: 60%;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    border-radius: 2em;
+    box-shadow: 
+    12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+    -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+}
+
+li {
+  list-style: none;
+}
+
+.linkIcons  li {
+  display: inline;
+}
+
+.linkIcons i {
+  scale: 200%;
+}
+
+
+.circlify {
+    border-radius: 50%;
+    width: 200px;
+    margin-top: 1em;
+    border: 2px solid black; 
+  }
+
+.linkicons {
+  scale: 200%
+}
+
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 600px) {
+  .topnav {width: 100%; margin-left:0}
+  .topnav a:first-child{float:left; width:70%; margin-left:2%;}
   .topnav a:not(:first-child) {display: none;}
   .topnav a.icon {
     float: right;
     display: block;
+    width: 20%;
+    margin-right: 2%;
   }
   .circleify {
-    width: 100px;
+    width: 75%;
     align-content: center;
+  }
+  .about {
+    width: 90%;
   }
 }
 
@@ -91,17 +175,3 @@ html {
   }
 }
   
-
-.titlebanner {
-    margin: 0;
-    width: 100%; 
-    color: white;
-    text-align: center;
-}
-
-
-.circlify {
-    border-radius: 50%;
-    width: 200px;
-    margin-top: 1em;
-  }
