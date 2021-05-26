@@ -139,6 +139,37 @@ width:200%
   width: 200px;
 }
 
+.menu {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 30%;
+  height: 4px;
+  background-color: var(--text-color);
+  transition: 0.4s;
+  margin-bottom: 3px;
+  margin-left: 35%;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+  transform: rotate(-45deg) translate(-9px, 6px) ;
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+  opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+  transform: rotate(45deg) translate(-8px, -8px) ;
+}
+
 
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
@@ -179,8 +210,8 @@ width:200%
   margin-bottom: 2%;
 }
 .topnav.responsive a#dropdown{
-  display: block;
   float: none;
+  display: block;
   width: 95%;
   margin-bottom: 1em;
 }
