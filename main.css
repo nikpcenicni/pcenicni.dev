@@ -184,11 +184,11 @@ width:200%
   width: 95%;
   margin-bottom: 1em;
 }
-.topnav a.icon#darkmode{
+.topnav.responsive a.icon#darkmode{
   width: 15%;
   margin-left:5%;
 }
-.topnav a.icon {
+.topnav.responsive a.icon {
   width: 18%;
   margin-left:5%;
 }
