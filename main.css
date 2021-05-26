@@ -144,18 +144,21 @@ width:200%
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 600px) {
-.topnav {width: 100%; margin-left:0}
-.topnav a:first-child{float:left; width:50%; margin-left:3%;}
 .topnav a:not(:first-child) {display: none;}
-.topnav a.icon#darkmode{
-  width: 15%;
-  margin-left:5%;
-}
+
+
 .topnav a.icon {
+  float: right;
   display: block;
-  width: 18%;
-  margin-left:5%;
 }
+.topnav #darkmode{
+  float: left;
+  display: block;
+}
+
+.topnav a:first-child{float:left; width:50%; margin-left:3%;}
+
+
 .body * {
   margin:0;
   margin-left:0%;
