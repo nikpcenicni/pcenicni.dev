@@ -120,7 +120,6 @@ border-radius: .7em;
   border-radius: 50%;
   width: 200px;
 }
-.content { margin-top: 1em;}
 
 
 
@@ -175,8 +174,9 @@ border-radius: .7em;
     }
     .topnav.responsive .dropdown a{
         position: relative;
-        display: block;
+        display: block; 
         margin-bottom: 1em;
         margin-left:3%;
     }
+    .topnav.responsive {height: 19em;}
 }
