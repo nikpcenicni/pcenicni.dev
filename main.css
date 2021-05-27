@@ -172,6 +172,10 @@ border-radius: .7em;
   margin-left:4%;
   margin-right:4%;
 }
+#contactForm {
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
 
 }
 
