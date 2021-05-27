@@ -9,13 +9,47 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     </head>
     <body>
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
         
-        <script src="" async defer></script>
+        <!-- Top Navigation Menu --> 
+        <div class="topnav" id="navbar">
+            <a title="Home" href="index.html" class="active">Home</a>
+
+            <div class="dropdown">
+                <a title="Gallery" href="gallery/index.html">Gallery</a>
+                <a title="Archive" href="archive/index.html">Archive</a> 
+                <a title="About" href="about.html"  >About</a> 
+            </div>
+            
+            
+            <a title="Darkmode" href="javascript:void(0);" class="icon" id="darkmode" onclick="darkmode()">
+                <i class="fa fa-moon-o"></i>
+            </a>
+
+            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+            <a title="Menu" href="javascript:void(0);" class="icon" onclick="shownavmenu()">
+                <i class="fa fa-bars"></i>
+            </a>       
+        </div> 
+
+        <!-- body -->    
+        <div class="content"> 
+            <div class="object" id="home">               
+                <h1>Under Construction</h1>         
+            </div> 
+        </div> 
+        
+
+        <script src="index.js"></script>
+
+
     </body>
 </html>
