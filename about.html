@@ -19,29 +19,26 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
         
-        <!-- Top Navigation Menu -->
+        <!-- Top Navigation Menu --> 
         <div class="topnav" id="navbar">
-        <a  title="Home "href="index.html">Home</a>
-                   
+            <a title="Home" href="../index.html">Home</a>
+
             <div class="dropdown">
-                <a title="Gallery" href="gallery/index.html">Gallery</a>
-                <a title="Archive" href="archive/index.html">Archive</a> 
-                <a title="About" href="about.html"  >About</a> 
+                <a title="Gallery" href="index.html" class="active">Gallery</a>
+                <a title="Archive" href="../archive/index.html">Archive</a> 
+                <a title="About" href="../about.html">About</a> 
             </div>
+            
+            
+            <a title="Darkmode" href="javascript:void(0);" class="icon" id="darkmode" onclick="darkmode()">
+                <i class="fa fa-moon-o"></i>
+            </a>
 
-
-
-        <a id="dropdopwn" title="Gallery" href="gallery/index.html">Gallery</a>
-        <a id="dropdopwn" title="Archive" href="archive/index.html">Archive</a> 
-        <a id="dropdopwn" title="About" href="about.html" class="active" >About</a>        
-        <a title="Darkmode" href="javascript:void(0);" class="icon" id="darkmode" onclick="darkmode()">
-            <em class="fa fa-moon-o"></em>
-        </a>
             <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
             <a title="Menu" href="javascript:void(0);" class="icon" onclick="shownavmenu()">
-                <em class="fa fa-bars"></em>
-            </a>
-     </div> 
+                <i class="fa fa-bars"></i>
+            </a>       
+        </div> 
         <div class="content">
         <!-- body -->    
         <div class="object" id="about">  
