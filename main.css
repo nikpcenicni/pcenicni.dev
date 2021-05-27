@@ -122,6 +122,20 @@ border-radius: .7em;
 }
 
 
+@media (prefers-color-scheme: dark) {
+    body {
+        --text-color: #BECBD8;
+        --bkg-color: #1A1B1E;
+        --light-shadow: #242529;
+        --dark-shadow: #151518;
+    }
+    body.light-theme{
+        --text-color: #242529;
+        --bkg-color: #DEEAF6;
+        --light-shadow: #F3F9FF;
+        --dark-shadow: #BECBD8;
+    }
+}
 
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
