@@ -17,3 +17,4 @@ function topNavResponse() {
       x.className = "topnav";
     }
   }
+
