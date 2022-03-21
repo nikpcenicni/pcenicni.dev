@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.81a0e3e8.css",
+    "main.js": "/static/js/main.2f805c5a.js",
+    "static/js/787.95feb273.chunk.js": "/static/js/787.95feb273.chunk.js",
+    "static/media/newake-font-webfont.woff": "/static/media/newake-font-webfont.d1b4dbaa308aabfe7356.woff",
+    "static/media/newake-font-webfont.woff2": "/static/media/newake-font-webfont.f9bf8c219c4ba8858596.woff2",
+    "index.html": "/index.html",
+    "main.81a0e3e8.css.map": "/static/css/main.81a0e3e8.css.map",
+    "main.2f805c5a.js.map": "/static/js/main.2f805c5a.js.map",
+    "787.95feb273.chunk.js.map": "/static/js/787.95feb273.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.81a0e3e8.css",
+    "static/js/main.2f805c5a.js"
+  ]
+}
