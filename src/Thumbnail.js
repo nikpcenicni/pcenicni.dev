@@ -10,8 +10,6 @@ function Thumbnail(props) {
     const [isOverlayVisible, setOverlayVisibility] = useState(false);
     const [isSmallScreen, setIsSmallScreen] = useState(false);
 
-    const [isArticle] = useState(false);
-
     const toggleOverlay = () => {
         setOverlayVisibility(!isOverlayVisible);
     };

@@ -1,6 +1,7 @@
 import React from 'react';
 import Thumbnail from './Thumbnail.js'; // Import the Thumbnail component
-
+import nachos from './images/nachos.png';
+import npxcard from './images/npxcard.png';
 import './App.css';
 
 
@@ -15,7 +16,7 @@ function Projects(props) {
       <div className='Cards'>
 
         <Thumbnail
-          image="images/npxcard.png"
+          image={npxcard}
           title="NPX Card"
           category="Personal"
           description="This project was created off a modified package from github 
@@ -29,7 +30,7 @@ function Projects(props) {
         />
         
         <Thumbnail
-          image="images/nachos.png"
+           image={nachos}
           title="Nachos"
           category="School"
           description="This project was created off a modified package from github 
@@ -43,7 +44,7 @@ function Projects(props) {
         />
         
         <Thumbnail
-          image="images/npxcard.png"
+           image={npxcard}
           title="Netflix Light"
           category="School"
           description=""
