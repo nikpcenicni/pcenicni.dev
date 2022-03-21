@@ -31,6 +31,7 @@ function Thumbnail(props) {
         setIsSmallScreen(false);
       }
     };
+    
 
     return (
         <>
@@ -62,20 +63,17 @@ function Thumbnail(props) {
                 <div className="project-image">
                     <img src={props.image} alt={props.imageAlt} />
                 </div>
-                <div className='expand'>
-                    <div className="project-expand">
-                            <div className="project-description">{props.description}</div>
-                            {props.blogLink.length > 0 && (
-                                <Link to={props.blogLink} style={{ textDecoration: 'none' }}>
-                                <div className="project-blogLink">
-                                    Learn to make your own
-                                </div>
-                                </Link>
-                            )}
-                    </div>       
-                </div>
                 
-                
+                <div className="project-expand">
+                    <div className="project-description">{props.description}</div>
+                    {props.blogLink.length > 0 && (
+                        <Link to={props.blogLink} style={{ textDecoration: 'none' }}>
+                        <div className="project-blogLink">
+                            Learn to make your own
+                        </div>
+                        </Link>
+                    )}
+                </div>                 
                 
             </div>
             {!isSmallScreen && (

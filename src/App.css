@@ -91,9 +91,6 @@
 
   width: 85%;
   height: 250px;
-
-  max-height: 320px;
-  transition: max-height 1s;
 }
 .floating-Card-Overlay{
   margin: auto;
@@ -290,18 +287,17 @@ button{
   }
   .floating-Card{
     width: 80%;
-    height: 240px;
     margin-top: 0.75em;
     margin-bottom: 0.75em;
     grid-template-columns: none;
     grid-template-rows: repeat(1, auto);
     grid-row-gap: 4em;
-    max-height: 240px;
-    transition: max-height 1s;
+    height: 240px; 
+    transition: height 1s;
   }
   .floating-Card.expanded {
-    height: auto;
-    max-height: 600px;
+    height: 600px;
+    
   }
   .project-image{
     padding-top: 1em;
