@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/pcenicni.dev/static/css/main.7188c682.css",
-    "main.js": "/pcenicni.dev/static/js/main.03198fdd.js",
+    "main.js": "/pcenicni.dev/static/js/main.2e830792.js",
     "static/js/787.95feb273.chunk.js": "/pcenicni.dev/static/js/787.95feb273.chunk.js",
     "static/media/newake-font-webfont.woff": "/pcenicni.dev/static/media/newake-font-webfont.d1b4dbaa308aabfe7356.woff",
     "static/media/newake-font-webfont.woff2": "/pcenicni.dev/static/media/newake-font-webfont.f9bf8c219c4ba8858596.woff2",
     "index.html": "/pcenicni.dev/index.html",
     "main.7188c682.css.map": "/pcenicni.dev/static/css/main.7188c682.css.map",
-    "main.03198fdd.js.map": "/pcenicni.dev/static/js/main.03198fdd.js.map",
+    "main.2e830792.js.map": "/pcenicni.dev/static/js/main.2e830792.js.map",
     "787.95feb273.chunk.js.map": "/pcenicni.dev/static/js/787.95feb273.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7188c682.css",
-    "static/js/main.03198fdd.js"
+    "static/js/main.2e830792.js"
   ]
 }
