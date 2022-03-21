@@ -13,11 +13,9 @@ function Thumbnail(props) {
     const toggleOverlay = () => {
         setOverlayVisibility(!isOverlayVisible);
     };
-   
-
 
     useEffect(() => {
-      const mediaQuery = window.matchMedia("(max-width: 600px)");
+      const mediaQuery = window.matchMedia("(max-width: 710px)");
       mediaQuery.addListener(handleMediaQueryChange);
       handleMediaQueryChange(mediaQuery);
   
@@ -37,7 +35,7 @@ function Thumbnail(props) {
     return (
         <>
         
-            <div className={'floating-Card ' + ((isOverlayVisible && isSmallScreen)? "expanded" : "")}>
+            <div className={'floating-Card ' + ((isOverlayVisible && isSmallScreen )? "expanded" : "")}>
                 <div className="project-title">
                     {props.title}
                     
@@ -56,25 +54,29 @@ function Thumbnail(props) {
                     
                 
                 </div>
-                <div className="project-modifiedDate">{props.lastModified}</div>
-                <div className="project-category">{props.category}</div>
-
+                <div className='project-info-header'>
+                    <div className="project-modifiedDate">{props.lastModified}</div>
+                    <div className="project-category">{props.category}</div>
+                </div>
+                
                 <div className="project-image">
                     <img src={props.image} alt={props.imageAlt} />
                 </div>
-
-                {(isOverlayVisible && isSmallScreen) && (
-                <div className="project-expand">
-                    <div className="project-description">{props.description}</div>
-                    {props.blogLink.length > 0 && (
-                        <Link to={props.blogLink} style={{ textDecoration: 'none' }}>
-                        <div className="project-blogLink">
-                            Learn to make your own
-                        </div>
-                        </Link>
-                    )}
+                <div className='expand'>
+                    <div className="project-expand">
+                            <div className="project-description">{props.description}</div>
+                            {props.blogLink.length > 0 && (
+                                <Link to={props.blogLink} style={{ textDecoration: 'none' }}>
+                                <div className="project-blogLink">
+                                    Learn to make your own
+                                </div>
+                                </Link>
+                            )}
+                    </div>       
                 </div>
-                )}
+                
+                
+                
             </div>
             {!isSmallScreen && (
                 <div className={'Overlay ' + (isOverlayVisible? "expanded" : "")}>
