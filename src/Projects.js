@@ -15,7 +15,6 @@ function Projects(props) {
       <div className='Cards'>
 
         <Thumbnail
-          link="/npx-card"
           image="images/npxcard.png"
           title="NPX Card"
           category="Personal"
@@ -30,33 +29,27 @@ function Projects(props) {
         />
         
         <Thumbnail
-          link="/npx-card"
-          image="images/npxcard.png"
-          title="NPX Card"
-          category="Personal"
+          image="images/nachos.png"
+          title="Nachos"
+          category="School"
           description="This project was created off a modified package from github 
           to be used as a virtual business card. By running the simple command 
           shown above the user is shown a graphical interface in the terminal screen.
           The interface shows links for my twitter, GitHub, LinkedIn, and my portfolio. 
           There is also the option to download a copy of my resume or send an email."
-          blogLink="/articles/npx-card"
-          externalLink="/github/npx-card"
+          blogLink=""
+          externalLink="/github/nachos"
           lastModified="March 1st, 2022"
         />
         
         <Thumbnail
-          link="/npx-card"
           image="images/npxcard.png"
-          title="NPX Card"
-          category="Personal"
-          description="This project was created off a modified package from github 
-          to be used as a virtual business card. By running the simple command 
-          shown above the user is shown a graphical interface in the terminal screen.
-          The interface shows links for my twitter, GitHub, LinkedIn, and my portfolio. 
-          There is also the option to download a copy of my resume or send an email."
-          blogLink="/articles/npx-card"
+          title="Netflix Light"
+          category="School"
+          description=""
+          blogLink=""
           externalLink="/github/npx-card"
-          lastModified="March 1st, 2022"
+          lastModified="December 1st, 2021"
         />
       </div>     
     

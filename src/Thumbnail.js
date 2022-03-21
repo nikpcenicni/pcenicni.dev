@@ -10,10 +10,13 @@ function Thumbnail(props) {
     const [isOverlayVisible, setOverlayVisibility] = useState(false);
     const [isSmallScreen, setIsSmallScreen] = useState(false);
 
+    const [isArticle] = useState(false);
+
     const toggleOverlay = () => {
         setOverlayVisibility(!isOverlayVisible);
     };
    
+
 
     useEffect(() => {
       const mediaQuery = window.matchMedia("(max-width: 600px)");
@@ -65,11 +68,13 @@ function Thumbnail(props) {
                 {(isOverlayVisible && isSmallScreen) && (
                 <div className="project-expand">
                     <div className="project-description">{props.description}</div>
-                    <Link to={props.blogLink} style={{ textDecoration: 'none' }}>
+                    {props.blogLink.length > 0 && (
+                        <Link to={props.blogLink} style={{ textDecoration: 'none' }}>
                         <div className="project-blogLink">
                             Learn to make your own
                         </div>
-                    </Link>
+                        </Link>
+                    )}
                 </div>
                 )}
             </div>
@@ -97,11 +102,13 @@ function Thumbnail(props) {
                         <img src={props.image} alt={props.imageAlt} />
                     </div>
                     <div className="project-description">{props.description}</div>
+                    {props.blogLink.length > 0 && (
                         <Link to={props.blogLink} style={{ textDecoration: 'none' }}>
-                            <div className="project-blogLink">
-                                Learn to make your own
-                            </div>
+                        <div className="project-blogLink">
+                            Learn to make your own
+                        </div>
                         </Link>
+                    )}
 
                     </div>
                 </div>

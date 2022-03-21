@@ -100,6 +100,7 @@ html, body{
 .Cards {
   margin-left: auto;
   margin-right: auto;
+  padding-bottom: 6em;
   display: grid;
   width: 70%;
   grid-template-areas: "col1 col2 col3";
@@ -139,7 +140,17 @@ html, body{
   grid-row-gap: 4em;
   vertical-align: middle;
 }
-
+.floating-card-about {
+  margin: auto;
+  width: 85%;
+  height: 400px;
+  border-radius: 15px;
+  border: 3px solid var(--main-stroke-color);
+  box-shadow: 0.5em 0.5em rgb(70, 70, 70);
+  background-color: white;
+  overflow: hidden;
+  text-decoration: none;
+}
 .Overlay {
   justify-content: center;
   position: fixed; /* Sit on top of the page content */
@@ -208,6 +219,7 @@ html, body{
   width: 90%;
   margin: auto;
   margin-top: 20px;
+  margin-bottom: 1em;
 }
 .project-blogLink {
   margin: 0 auto;
