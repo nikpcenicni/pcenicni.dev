@@ -37,32 +37,35 @@ function Thumbnail(props) {
         <>
         
             <div className={'floating-Card ' + ((isOverlayVisible && isSmallScreen )? "expanded" : "")}>
-                <div className="project-title">
-                    {props.title}
+                <div className='default'>
+                    <div className="project-title">
+                        {props.title}
+                        
+                        <button className="project-options" 
+                        onClick={toggleOverlay} 
+                        aria-expanded={isOverlayVisible}
+                        aria-controls="expand"
+                        >
+                            {!isOverlayVisible && (
+                                <FaExpand />
+                            )}
+                            {isOverlayVisible && (
+                                <FaCompress />
+                            )}
+                        </button>
+                        
                     
-                    <button className="project-options" 
-                    onClick={toggleOverlay} 
-                    aria-expanded={isOverlayVisible}
-                    aria-controls="expand"
-                    >
-                        {!isOverlayVisible && (
-                            <FaExpand />
-                        )}
-                        {isOverlayVisible && (
-                            <FaCompress />
-                        )}
-                    </button>
+                    </div>
+                    <div className='project-info-header'>
+                        <div className="project-modifiedDate">{props.lastModified}</div>
+                        <div className="project-category">{props.category}</div>
+                    </div>
                     
-                
-                </div>
-                <div className='project-info-header'>
-                    <div className="project-modifiedDate">{props.lastModified}</div>
-                    <div className="project-category">{props.category}</div>
+                    <div className="project-image">
+                        <img src={props.image} alt={props.imageAlt} />
+                    </div>
                 </div>
                 
-                <div className="project-image">
-                    <img src={props.image} alt={props.imageAlt} />
-                </div>
                 
                 <div className="project-expand">
                     <div className="project-description">{props.description}</div>

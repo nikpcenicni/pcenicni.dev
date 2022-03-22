@@ -292,12 +292,22 @@ button{
     grid-template-columns: none;
     grid-template-rows: repeat(1, auto);
     grid-row-gap: 4em;
-    height: 240px; 
-    transition: height 1s;
+    height: auto;
+
   }
-  .floating-Card.expanded {
-    height: 600px;
-    
+
+  .floating-Card .default {
+    height: auto;
+  }
+  .floating-Card .project-expand {
+    -webkit-transition: max-height 0.8s ease-in-out;
+	  -moz-transition: max-height 0.8s ease-in-out;
+    transition: max-height 0.8s ease-in-out;
+    overflow: hidden;
+    max-height: 0;
+  }
+  .floating-Card.expanded .project-expand {
+    max-height: 600px;
   }
   .project-image{
     padding-top: 1em;
@@ -345,13 +355,14 @@ button{
 
 @media (min-width: 1000px) {
   .Cards {
-    max-width: 1400px;
-    width: 90%;
+    max-width: 1500px;
+    width: 95%;
     margin: 0 auto;
     grid-template-areas: "col1 col2 col3";
   }
   .floating-Card{
-    width: 80%;
+    max-width: 450px;
+    width: 300px;
     height: auto;
     grid-template-columns: repeat(3, auto);
     grid-template-rows: none;
