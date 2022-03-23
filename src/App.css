@@ -64,6 +64,10 @@
   display: none;
 }
 
+.Burger {
+  display: none;
+}
+
 .Cards {
   margin-left: auto;
   margin-right: auto;
@@ -105,15 +109,13 @@
   background-color: white;
   overflow: hidden;
   text-decoration: none;
-  grid-template-columns: repeat(2, auto);
-  grid-template-rows: none;
-  grid-row-gap: 4em;
   vertical-align: middle;
 }
 .floating-card-about {
   margin: auto;
   width: 85%;
-  height: 400px;
+  max-height: 800px;
+  height: auto;
   border-radius: 15px;
   border: 3px solid var(--main-stroke-color);
   box-shadow: 0.5em 0.5em rgb(70, 70, 70);
@@ -253,6 +255,7 @@ h1 {
   font-size: 20px;
   text-align: right;
 }
+
 button{
   border: none;
   overflow: visible;
@@ -263,9 +266,80 @@ button{
   text-align: right;
 }
 
-.Burger {
-  display: none;
+
+.about-image img{
+  padding-top: 1em;
+  width: 20%;
 }
+
+.buttons {
+  width: 90%;
+  height: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-areas: "col1 col2";
+}
+
+.buttons a {
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+  grid-column: repeat(2, minmax(0, 1fr));
+  width: 80%;
+  grid-row-gap: 1em;
+  width: 150px
+}
+
+.download {
+  border: none;
+  overflow: visible;
+  background-color: var(--main-btn-color);
+  color: var(--main-btntxt-color);
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 20px;
+  text-align: center;
+  padding: 0.2em;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.topPadding {
+  margin-top: 2em;
+}
+
+.Links {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  display: grid;
+  grid-template-areas: "one" "two" "three"  "four" ;
+}
+.Links a {
+  margin-left: auto;
+  margin-right: auto;
+  grid-row-gap: 1em;
+  grid-template-rows: repeat(4, auto);
+  width: 80%;
+  height: 2em;
+  background-color: var(--main-btn-color);
+  border-radius: 0.5em;
+  margin-top: 1em;
+  padding-top: 1em;
+  color: var(--main-btntxt-color);
+  text-decoration: none;
+  font-size: 20px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.Links a .icon {
+  float: left;
+  padding-left: 2em;
+}
+
+
 @media (max-width: 710px) {
   .navigation {
     grid-template-areas: "logo buger" "navigation-sub navigation-sub";
@@ -327,6 +401,10 @@ button{
   }
 
 
+  .about-image img{
+    width: 40%;
+  }
+
 }
 
 @media (min-width: 710px) {
@@ -350,6 +428,8 @@ button{
   .floating-Card-Overlay{
     height: auto;
   }
+
+  
 
 }
 

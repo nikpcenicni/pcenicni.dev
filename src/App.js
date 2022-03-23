@@ -8,6 +8,7 @@ import { BrowserRouter, Route, Link } from 'react-router-dom';
 import Projects from './Projects.js'; 
 import Articles from './Articles.js'; 
 import About from './About.js'; 
+import LandingPage from './LandingPage.js';
 
 import './App.css';
 
@@ -24,19 +25,21 @@ function App() {
     
     <BrowserRouter>
       <div className="App">
-      
-  
-        
+
+
         <Route exact path="/" component={Projects} />
         <Route path="/articles" component={Articles} />
         <Route path="/about" component={About} />
+        <Route path="/connect" component={LandingPage} />
 
   
         <div className={"navigation "  + (isNavVisible? "expanded" : "")}>
           <Link to="/" className="item">Nikholas Pcenicni</Link>
+          
           <button onClick={toggleNav} className="navButton Burger">
             <FaBars/>
           </button>
+
           <div className="navigation-sub">
                                             
             <Link to="/" onClick={toggleNav} className="item">Projects</Link>
