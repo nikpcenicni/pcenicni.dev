@@ -55,6 +55,9 @@ function LandingPage(props) {
             </a>
         </div>
       </div>
+      <div className="bottomPadding">
+
+      </div>
       
     </div>
   )
