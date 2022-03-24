@@ -2,6 +2,7 @@ import React , {useState, useEffect} from 'react';
 import {Link} from 'react-router-dom';
 import { FaExpand, FaCompress} from 'react-icons/fa';
 import {GrClose} from 'react-icons/gr';
+import { motion } from "framer-motion"
 
 import './App.css';
 
@@ -31,20 +32,40 @@ function Thumbnail(props) {
         setIsSmallScreen(false);
       }
     };
+
+    const expand = {
+        hidden: {
+            y: "-100yh",
+        },
+        visible: {
+            y: "0",
+        },
+        exit: {
+            y: "100yh",
+        },
+    };
+
+    
     
 
     return (
         <>
         
-            <div className={'floating-Card ' + ((isOverlayVisible && isSmallScreen )? "expanded" : "")}>
+            <motion.div 
+             whileHover={{scale: 1.1}}
+             
+            className={'floating-Card ' + ((isOverlayVisible && isSmallScreen )? "expanded" : "")}>
                 <div className='default'>
                     <div className="project-title">
                         {props.title}
                         
-                        <button className="project-options" 
-                        onClick={toggleOverlay} 
-                        aria-expanded={isOverlayVisible}
-                        aria-controls="expand"
+                        <motion.button
+                            whileHover={{scale: 1.1}}
+                            whileTap={{scale: 0.9}}
+                            className="project-options" 
+                            onClick={toggleOverlay} 
+                            aria-expanded={isOverlayVisible}
+                            aria-controls="expand"
                         >
                             {!isOverlayVisible && (
                                 <FaExpand />
@@ -52,7 +73,7 @@ function Thumbnail(props) {
                             {isOverlayVisible && (
                                 <FaCompress />
                             )}
-                        </button>
+                        </motion.button>
                         
                     
                     </div>
@@ -71,28 +92,41 @@ function Thumbnail(props) {
                     <div className="project-description">{props.description}</div>
                     {props.blogLink.length > 0 && (
                         <Link to={props.blogLink} style={{ textDecoration: 'none' }}>
-                        <div className="project-blogLink">
+                        <motion.div 
+                            whileHover={{scale: 1.1}}
+                            whileTap={{scale: 0.9}}
+                            className="project-blogLink"
+                        >
                             Learn to make your own
-                        </div>
+                        </motion.div>
                         </Link>
                     )}
                 </div>                 
                 
-            </div>
-            {!isSmallScreen && (
-                <div className={'Overlay ' + (isOverlayVisible? "expanded" : "")}>
+            </motion.div>
+            {(!isSmallScreen && isOverlayVisible) && (
+                <motion.div 
+                    className={'Overlay ' + (isOverlayVisible? "expanded" : "")}
+                    initial={{opacity: 0}}
+                    animate={{opacity: 1}}
+                    exit={{opacity: 0}}
+
+                >
                     <div id="Overlay" className={'floating-Card-Overlay'}>
 
                     <div className="project-title">
                         {props.title}
                         
-                        <button className="project-options" 
-                        onClick={toggleOverlay} 
-                        aria-expanded={isOverlayVisible}
-                        aria-controls="expand"
+                        <motion.button 
+                            whileHover={{scale: 1.1}}
+                            whileTap={{scale: 0.9}}
+                            className="project-options" 
+                            onClick={toggleOverlay} 
+                            aria-expanded={isOverlayVisible}
+                            aria-controls="expand"
                         >
                             <GrClose/>
-                        </button>
+                        </motion.button>
                         
 
                     </div>
@@ -105,14 +139,17 @@ function Thumbnail(props) {
                     <div className="project-description">{props.description}</div>
                     {props.blogLink.length > 0 && (
                         <Link to={props.blogLink} style={{ textDecoration: 'none' }}>
-                        <div className="project-blogLink">
+                        <motion.div 
+                         whileHover={{scale: 1.1}}
+                         whileTap={{scale: 0.9}}
+                         className="project-blogLink">
                             Learn to make your own
-                        </div>
+                        </motion.div>
                         </Link>
                     )}
 
                     </div>
-                </div>
+                </motion.div>
             )}
             
         </>

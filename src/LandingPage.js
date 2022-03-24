@@ -1,6 +1,7 @@
 import React from "react"
 import nik from './images/Nik.png';
-import { FaHome, FaGithub, FaLinkedin, FaInstagram, FaTwitter } from "react-icons/fa"
+import { FaGithub, FaLinkedin, FaInstagram, FaTwitter } from "react-icons/fa";
+import {motion} from 'framer-motion';
  
 function LandingPage(props) {
   return (
@@ -19,8 +20,22 @@ function LandingPage(props) {
             Use the buttons below to get in touch with me to discuss how I can turn your vision into a professional website.
         </p>
         <div className="buttons" >
-            <a className="download" href='/Nikholas Pcenicni.vcf' download>Add Contact</a>
-            <a className="download" href='mailto:nik@pcenicni.dev' >Email Me</a>
+            <motion.a 
+                whileHover={{scale: 1.1}}
+                whileTap={{scale: 0.9}}
+                className="download" 
+                href='/Nikholas Pcenicni.vcf' 
+                download>
+                Add Contact
+            </motion.a>
+            <motion.a 
+                whileHover={{scale: 1.1}}
+                whileTap={{scale: 0.9}}
+                className="download" 
+                href='mailto:nik@pcenicni.dev' 
+            >
+                Email Me
+            </motion.a>
         </div>
       </div>
       <div>
@@ -29,30 +44,50 @@ function LandingPage(props) {
       <div className="floating-card-about topPadding">
         <div className="project-title">Links</div>
         <div className="Links">
-            <a className="" href="https://github.com/nikpcenicni" target="_blank"> 
+            <motion.a 
+                whileHover={{scale: 1.1}}
+                whileTap={{scale: 0.9}}
+                className=""
+                href="https://github.com/nikpcenicni" 
+                target="_blank"> 
                 <div className="icon">
                     <FaGithub/>
                 </div> 
                 GitHub
-            </a>
-            <a className="" href="https://www.linkedin.com/in/nikholaspcenicni/" target="_blank">
+            </motion.a>
+            <motion.a 
+             whileHover={{scale: 1.1}}
+             whileTap={{scale: 0.9}}
+             className="" 
+             href="https://www.linkedin.com/in/nikholaspcenicni/" 
+             target="_blank">
                 <div className="icon">
                     <FaLinkedin/> 
                 </div>
                 LinkedIn
-            </a>
-            <a className="" href="https://instagram.com/nik.pcenicni" target="_blank">
+            </motion.a>
+            <motion.a 
+             whileHover={{scale: 1.1}}
+             whileTap={{scale: 0.9}}
+             className="" 
+             href="https://instagram.com/nik.pcenicni" 
+             target="_blank">
                 <div className="icon">
                     <FaInstagram/>
                 </div>
                  Instagram
-            </a>
-            <a className="" href="https://twitter.com/nikpcenicni" target="_blank">
+            </motion.a>
+            <motion.a 
+             whileHover={{scale: 1.1}}
+             whileTap={{scale: 0.9}}
+             className="" 
+             href="https://twitter.com/nikpcenicni" 
+             target="_blank">
                 <div className="icon">
                     <FaTwitter/>
                 </div>
                 Twitter
-            </a>
+            </motion.a>
         </div>
       </div>
       <div className="bottomPadding">
