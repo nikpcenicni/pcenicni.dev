@@ -90,17 +90,28 @@ function Thumbnail(props) {
                 
                 <div className="project-expand">
                     <div className="project-description">{props.description}</div>
-                    {props.blogLink.length > 0 && (
-                        <Link to={props.blogLink} style={{ textDecoration: 'none' }}>
-                        <motion.div 
+            
+                    <div className="buttons" >
+                        {props.blogLink.length > 0 && (
+                            <Link  className="download"  to={props.blogLink} style={{ textDecoration: 'none' }}>
+                                <motion.a 
+                                    whileHover={{scale: 1.1}}
+                                    whileTap={{scale: 0.9}}
+                                    >
+                                    Blog Link
+                                </motion.a>
+                            </Link>
+                        )}
+                        <motion.a 
                             whileHover={{scale: 1.1}}
                             whileTap={{scale: 0.9}}
-                            className="project-blogLink"
+                            className="download" 
+                            href={props.externalLink} 
+                            target="_blank"
                         >
-                            Learn to make your own
-                        </motion.div>
-                        </Link>
-                    )}
+                            Code
+                        </motion.a>
+                    </div>
                 </div>                 
                 
             </motion.div>
