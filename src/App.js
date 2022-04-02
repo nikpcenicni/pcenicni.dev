@@ -63,23 +63,7 @@ function App() {
                 onClick={toggleNav} 
                 className="item"
               >
-                
-                  Projects
-                
-                
-              </Link>
-            </motion.div>
-            <motion.div
-              className='maxWidth'
-                whileHover={{scale: 1.1}}
-                whileTap={{scale: 0.9}}
-            >
-              <Link 
-                to="/articles" 
-                onClick={toggleNav} 
-                className="item"
-              >
-                Articles
+                Projects
               </Link>
             </motion.div>
             <motion.div

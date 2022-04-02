@@ -25,7 +25,6 @@ function Projects(props) {
           shown above the user is shown a graphical interface in the terminal screen.
           The interface shows links for my twitter, GitHub, LinkedIn, and my portfolio. 
           There is also the option to download a copy of my resume or send an email."
-          blogLink="/articles/npx-card"
           externalLink="https://github.com/nikpcenicni/Nachos"
           lastModified="March 1st, 2022"
         />
@@ -39,7 +38,6 @@ function Projects(props) {
           shown above the user is shown a graphical interface in the terminal screen.
           The interface shows links for my twitter, GitHub, LinkedIn, and my portfolio. 
           There is also the option to download a copy of my resume or send an email."
-          blogLink="/articles/nachos"
           externalLink="https://github.com/nikpcenicni/Nachos"
           lastModified="March 1st, 2022"
         />
@@ -52,7 +50,6 @@ function Projects(props) {
           where we were tasked with developing a user interface change. We decided that it would
           be easiest to create a chrome extension that would allow the user to change the color
           of the all graphics on Netflix."
-          blogLink="/articles/netflix-light"
           externalLink="https://github.com/nikpcenicni/Netflix"
           lastModified="December 1st, 2021"
         />

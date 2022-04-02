@@ -43,18 +43,17 @@
 .navigation-sub {
   grid-area: navigation-sub;
   display: grid;
-  grid-template-columns: repeat(3, auto);
+  grid-template-columns: repeat(2, auto);
   align-items: center;
   justify-items: center;
 }
 
 /* Style the links inside the navigation bar */
 .item {
-  float: right ;
   display: block;
   color: var(--main-hdr-color);
   text-align: center;
-  padding: 14px 16px;
+  padding: 14px 0;
   text-decoration: none;
   font-size: 30px;
 }
@@ -291,6 +290,28 @@ button{
   width: 200px;
 }
 
+.button {
+  width: 90%;
+  height: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+}
+
+.githubLink {
+  border: none;
+  overflow: visible;
+  background-color: var(--main-btn-color);
+  color: var(--main-btntxt-color);
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 20px;
+  text-align: center;
+  padding: 0.2em;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
 .download {
   border: none;
   overflow: visible;
@@ -359,7 +380,8 @@ button{
     grid-template-areas: "logo buger" "navigation-sub navigation-sub";
   }
   .navigation-sub {
-    grid-template-rows: repeat(3, auto);
+    width: 100%;
+    grid-template-rows: repeat(2, auto);
     grid-template-columns: none;
   }
 
@@ -368,7 +390,7 @@ button{
   }
 
   .navigation.expanded {
-    height: 250px;
+    height: 200px;
   }
   .item {
     width: 100%;
@@ -437,6 +459,29 @@ button{
   .download {
     padding-left: 5px;
     padding-right: 5px;
+  }
+
+  .button {
+    width: 100%;
+    display: block;
+
+  }
+
+  .button .githubLink{
+    top: -50%;
+    border: none;
+    overflow: visible;
+    background-color: var(--main-btn-color);
+    color: var(--main-btntxt-color);
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 1em;
+    padding-left: 3em;
+    padding-right: 3em;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 
 }

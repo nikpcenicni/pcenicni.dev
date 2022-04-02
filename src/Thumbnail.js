@@ -89,29 +89,21 @@ function Thumbnail(props) {
                 
                 
                 <div className="project-expand">
-                    <div className="project-description">{props.description}</div>
-            
-                    <div className="buttons" >
-                        {props.blogLink.length > 0 && (
-                            <Link  className="download"  to={props.blogLink} style={{ textDecoration: 'none' }}>
-                                <motion.a 
-                                    whileHover={{scale: 1.1}}
-                                    whileTap={{scale: 0.9}}
-                                    >
-                                    Blog Link
-                                </motion.a>
-                            </Link>
-                        )}
+                    <div className="project-description">
+                        {props.description}
+                    </div>
+                    <div className='button'>
                         <motion.a 
-                            whileHover={{scale: 1.1}}
-                            whileTap={{scale: 0.9}}
-                            className="download" 
+                            whileHover={{scale: 1.2}}
+                            whileTap={{scale: 0.8}}
+                            className="githubLink" 
                             href={props.externalLink} 
                             target="_blank"
                         >
                             Code
                         </motion.a>
                     </div>
+                    
                 </div>                 
                 
             </motion.div>
@@ -148,16 +140,17 @@ function Thumbnail(props) {
                         <img src={props.image} alt={props.imageAlt} />
                     </div>
                     <div className="project-description">{props.description}</div>
-                    {props.blogLink.length > 0 && (
-                        <Link to={props.blogLink} style={{ textDecoration: 'none' }}>
-                        <motion.div 
-                         whileHover={{scale: 1.1}}
-                         whileTap={{scale: 0.9}}
-                         className="project-blogLink">
-                            Learn to make your own
-                        </motion.div>
-                        </Link>
-                    )}
+                    <div className="button" >
+                        <motion.a 
+                            whileHover={{scale: 1.1}}
+                            whileTap={{scale: 0.9}}
+                            className="githubLink" 
+                            href={props.externalLink} 
+                            target="_blank"
+                        >
+                            Code
+                        </motion.a>
+                    </div>
 
                     </div>
                 </motion.div>

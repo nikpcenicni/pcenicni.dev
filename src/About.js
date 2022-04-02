@@ -1,5 +1,6 @@
 import React from "react"
 import nik from './images/Nik.png';
+import { motion } from 'framer-motion';
  
 function NewComponent(props) {
   return (
@@ -20,19 +21,23 @@ function NewComponent(props) {
             Use the buttons below to get in touch with me to discuss how I can turn your vision into a professional website.
         </p>
         <div className="buttons" >
-            <a 
+            <motion.a 
+              whileHover={{scale: 1.1}}
+              whileTap={{scale: 0.9}}
               className="download" 
               href='/Nikholas Pcenicni.vcf' 
               download
             >
               Add Contact
-            </a>
-            <a 
+            </motion.a>
+            <motion.a 
+              whileHover={{scale: 1.1}}
+              whileTap={{scale: 0.9}} 
               className="download" 
               href='mailto:nik@pcenicni.dev' 
             >
               Email Me
-            </a>
+            </motion.a>
         </div>
       </div>
       <div>
