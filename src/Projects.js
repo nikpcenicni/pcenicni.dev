@@ -28,7 +28,7 @@ function Projects(props) {
    
         <Thumbnail
           image={netflixLight}
-          title="Dhar Mann TikTok Bot"
+          title="TikTok Bot"
           category="Personal"
           description="Automate the creation of low-effort TikTok videos with a main clip 
           playing on the top half and a secondary sensory video playing on the bottom. Start by 
