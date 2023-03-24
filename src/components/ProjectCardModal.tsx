@@ -1,9 +1,19 @@
 import { useState } from 'react';
 import PropTypes from 'prop-types';
 import Image from 'next/image';
+import Link from 'next/link';
 
-const Projectcardmodal = ({ id, title, imageSrc, description, link, onClose }) => {
-  const [showModal, setShowModal] = useState(true);
+interface ProjectcardmodalProps {
+  id: number;
+  title: string;
+  imageSrc: string;
+  description: string;
+  link: string;
+  onClose: () => void;
+}
+
+const Projectcardmodal: React.FC<ProjectcardmodalProps> = ({ id, title, imageSrc, description, link, onClose }) => {
+  const [showModal, setShowModal] = useState<boolean>(true);
 
   const closeModal = () => {
     setShowModal(false);
@@ -33,14 +43,14 @@ const Projectcardmodal = ({ id, title, imageSrc, description, link, onClose }) =
 
             <p className="text-gray-700 text-center mb-4 p-4 w-full">{description}</p>
             <div className='bg-greenblue w-fit mx-auto rounded-lg p-2 hover:drop-shadow-lg'>
-              <a
+              <Link
                 href={link}
                 className="text-main font-bold py-2 px-4 rounded"
                 target="_blank"
                 rel="noreferrer"
               >
                 Visit Project
-              </a>
+              </Link>
             </div>
           </div>
         </div>

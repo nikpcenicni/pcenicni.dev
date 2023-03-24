@@ -1,12 +1,24 @@
 import { useState } from 'react';
 import { useForm } from 'react-hook-form';
 
-const ContactForm = ({ fields, buttonText }) => {
+interface FieldProps {
+  name: string;
+  label: string;
+  type: string;
+  required: boolean;
+}
+
+interface ContactFormProps {
+  fields: FieldProps[];
+  buttonText: string;
+}
+
+const ContactForm = ({ fields, buttonText }: ContactFormProps) => {
   const { register, handleSubmit, formState: { errors } } = useForm();
   const [submitting, setSubmitting] = useState(false);
   const [submitError, setSubmitError] = useState('');
 
-  const onSubmit = async (data) => {
+  const onSubmit = async (data: any) => {
     try {
       setSubmitting(true);
       setSubmitError('');
@@ -43,7 +55,6 @@ const ContactForm = ({ fields, buttonText }) => {
               <input
                 type={type}
                 id={name}
-                name={name}
                 {...register(name, { required })}
                 className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
               />
