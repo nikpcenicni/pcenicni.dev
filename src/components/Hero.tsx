@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import React from 'react';
+import HeroBackground from './HeroBackgroud';
 
 interface HeroProps {
   backgroundImage: string;
@@ -23,7 +24,7 @@ function Hero({ backgroundImage, title, ctaText, ctaLink }: HeroProps) {
       <div className="relative z-20 text-center py-24 md:py-32 lg:py-48">
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-main">{title}</h1>
         <Link href={ctaLink}>
-          <p className="mt-5 py-2 px-8 mt-8 rounded-xl inline-block bg-greenblue text-main hover:drop-shadow-2xl">
+          <p className="mt-5 py-2 px-8 rounded-xl inline-block bg-greenblue text-main hover:drop-shadow-2xl">
             {ctaText}
           </p>
         </Link>
