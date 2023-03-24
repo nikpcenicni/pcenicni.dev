@@ -53,6 +53,7 @@ const ContactForm = ({ fields, buttonText }: ContactFormProps) => {
                 {...register(name, { required })}
                 className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
               />
+              <input type="hidden" name="form-name" value="contact" />
               {errors[name] && (
                 <div className="mt-1 text-red-500">{label} is required.</div>
               )}
