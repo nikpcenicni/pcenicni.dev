@@ -1,6 +1,5 @@
 import Link from 'next/link';
 import React from 'react';
-import HeroBackground from './HeroBackgroud';
 
 interface HeroProps {
   backgroundImage: string;
