@@ -1,12 +1,13 @@
 import Navbar from '../components/Navbar'
 import React from 'react';
 import AboutMeCard from '@/components/AboutMeCard';
+import Footer from '@/components/Footer';
 
 const About = () => {
   return (
     <>
       <Navbar/>
-      <div className='w-full'>
+      <div className='w-full h-screen'>
 
 
         <div className='w-11/12 lg:w-1/2 mx-auto pt-20'>
@@ -20,6 +21,7 @@ const About = () => {
           />
         </div>
       </div>
+      <Footer/>
       {/* <div className="pt-20 flex flex-col items-center justify-center min-h-screen bg-main">
       <div className="w-full max-w-3xl bg-white rounded-lg shadow-lg overflow-hidden">
         <div className="px-6 py-8 md:flex">
