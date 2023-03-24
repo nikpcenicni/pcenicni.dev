@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <>
       <Navbar/>
-      <ContactForm fields={fields} buttonText="Submit" />
+      <ContactForm fields={fields}/>
     </>
   )
 }
