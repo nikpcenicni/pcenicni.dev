@@ -27,7 +27,7 @@ const ContactForm: React.FC<{ fields: FieldProps[] }> = ({ fields }) => {
 
   return (
     <div className="pt-20">
-      <div className='mt-10 w-1/2 mx-auto border-4 rounded-xl'>
+      <div className='mt-10 w-11/12 sm:w-5/6 md:w-3/4 lg:w-1/2 mx-auto border-4 rounded-xl'>
         <h1 className='text-2xl font-bold mb-2 p-4 border-b-4 bg-greenblue text-main border-stroke rounded-t-lg'>Tell Me About It</h1>
         <form name="contact" action="/success" method="POST" data-netlify="true" className="p-4">
             <input type="hidden" name="form-name" value="contact" />

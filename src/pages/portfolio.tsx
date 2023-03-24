@@ -11,47 +11,10 @@ interface ProjectType {
   link: string;
 }
 
-const projects: ProjectType[] = [
-  {
-    id: 1,
-    title: 'Project 1',
-    imageSrc: 'https://source.unsplash.com/random/300x200',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce pulvinar pretium odio sit amet dictum.',
-    link: 'https://www.google.com/',
-  },
-  {
-    id: 2,
-    title: 'Project 2',
-    imageSrc: 'https://source.unsplash.com/random/300x200',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce pulvinar pretium odio sit amet dictum.',
-    link: 'https://www.google.com/',
-  },
-  {
-    id: 3,
-    title: 'Project 3',
-    imageSrc: 'https://source.unsplash.com/random/300x200',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce pulvinar pretium odio sit amet dictum.',
-    link: 'https://www.google.com/',
-  },
-  {
-    id: 4,
-    title: 'Project 4',
-    imageSrc: 'https://source.unsplash.com/random/300x200',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce pulvinar pretium odio sit amet dictum.',
-    link: 'https://www.google.com/',
-  },
-];
-
-
-
 const Portfolio = () => {
   const [modalOpen, setModalOpen] = useState(false);
   const [currentProject, setCurrentProject] = useState<ProjectType | null>(null);
-
+  const projects: ProjectType[] = require('../projects.json');
 
   const openModal = (project: ProjectType) => {
     setCurrentProject(project);
