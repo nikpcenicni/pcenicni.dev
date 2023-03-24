@@ -48,7 +48,7 @@ const ContactForm = ({ fields, buttonText }: ContactFormProps) => {
       <div className='mt-10 w-1/2 mx-auto border-4 rounded-xl'>
         <h1 className='text-2xl font-bold mb-2 p-4 border-b-4 bg-greenblue text-main border-stroke rounded-t-lg'>Tell Me About It</h1>
         
-        <form onSubmit={handleSubmit(onSubmit)} className="p-4">
+        <form data-netlify="true" name="contact" onSubmit={handleSubmit(onSubmit)} className="p-4">
           {fields.map(({ name, label, type, required }) => (
             <div key={name} className="mb-4">
               <label htmlFor={name} className="block mb-2 font-semibold">{label}</label>
