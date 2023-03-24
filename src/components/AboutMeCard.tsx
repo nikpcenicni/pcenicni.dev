@@ -19,7 +19,7 @@ interface AboutMeCardProps {
                   <img src={imageSrc} alt={title} className="w-1/2 mx-auto rounded-xl" />
               </div>
               <div className="w-full px-4">
-                  <h3 className="text-xl text-center text-stroke font-medium mb-2">Hi, I'm {name}</h3>
+                  <h3 className="text-xl text-center text-stroke font-medium mb-2">{"Hi, I'm " + name}</h3>
               </div>
               <div className="w-full">
                   <p className="text-lg text-center text-stroke font-medium mb-2">{blurb}</p>
