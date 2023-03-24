@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Link from 'next/link';
 
 const links = [
   {
@@ -60,13 +61,13 @@ const Navbar = () => {
       >
         <div className="text-sm lg:flex-grow">
           {links.map((link) => (
-            <a
+            <Link
               href={link.href}
               className={`block mt-4 lg:inline-block lg:mt-0 text-stroke hover:text-main mr-4`}
               key={link.name}
             >
               {link.name}
-            </a>
+            </Link>
           ))}
         </div>
       </div>
