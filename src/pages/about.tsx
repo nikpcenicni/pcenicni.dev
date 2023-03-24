@@ -16,7 +16,7 @@ const About = () => {
             <p className="text-gray-700 text-base mb-4">Full-stack developer with 5+ years of experience.</p>
             <h2 className="text-xl font-bold text-gray-900 mb-2">Education</h2>
             <ul className="list-disc list-inside mb-4">
-              <li>Bachelor's Degree in Computer Science, XYZ University (2014-2018)</li>
+              <li>Bachelors Degree in Computer Science, XYZ University (2014-2018)</li>
             </ul>
             <h2 className="text-xl font-bold text-gray-900 mb-2">Work Experience</h2>
             <div className="mb-4">
