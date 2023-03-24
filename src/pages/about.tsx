@@ -1,11 +1,26 @@
 import Navbar from '../components/Navbar'
 import React from 'react';
+import AboutMeCard from '@/components/AboutMeCard';
 
 const About = () => {
   return (
     <>
       <Navbar/>
-      <div className="pt-20 flex flex-col items-center justify-center min-h-screen bg-main">
+      <div className='w-full'>
+
+
+        <div className='w-11/12 lg:w-1/2 mx-auto pt-20'>
+          <AboutMeCard
+            title="About Me"
+            imageSrc="https://source.unsplash.com/random/1600x1600" 
+            name="Nikholas Pcenicni"
+            blurb="Full-Stack Developer"
+            description={''} 
+            link={''}
+          />
+        </div>
+      </div>
+      {/* <div className="pt-20 flex flex-col items-center justify-center min-h-screen bg-main">
       <div className="w-full max-w-3xl bg-white rounded-lg shadow-lg overflow-hidden">
         <div className="px-6 py-8 md:flex">
           <div className="md:w-1/3 pb-5">
@@ -47,9 +62,9 @@ const About = () => {
               <li>GitHub: <a href="#">johndoe</a></li>
             </ul>
           </div>
-        </div>
+        </div> 
       </div>
-    </div>
+    </div> */}
     </>
  );
 };
