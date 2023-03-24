@@ -7,7 +7,7 @@ const projects = [
   {
     id: 1,
     title: 'Project 1',
-    imageSrc: 'https://via.placeholder.com/300x200',
+    imageSrc: 'https://source.unsplash.com/random/300x200',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce pulvinar pretium odio sit amet dictum.',
     link: 'https://www.google.com/',
@@ -15,7 +15,7 @@ const projects = [
   {
     id: 2,
     title: 'Project 2',
-    imageSrc: 'https://via.placeholder.com/300x200',
+    imageSrc: 'https://source.unsplash.com/random/300x200',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce pulvinar pretium odio sit amet dictum.',
     link: 'https://www.google.com/',
@@ -23,7 +23,7 @@ const projects = [
   {
     id: 3,
     title: 'Project 3',
-    imageSrc: 'https://via.placeholder.com/300x200',
+    imageSrc: 'https://source.unsplash.com/random/300x200',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce pulvinar pretium odio sit amet dictum.',
     link: 'https://www.google.com/',
@@ -31,7 +31,7 @@ const projects = [
   {
     id: 4,
     title: 'Project 4',
-    imageSrc: 'https://via.placeholder.com/300x200',
+    imageSrc: 'https://source.unsplash.com/random/300x200',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce pulvinar pretium odio sit amet dictum.',
     link: 'https://www.google.com/',

@@ -36,7 +36,9 @@ const Navbar = () => {
         <span
           className={`font-semibold text-xl tracking-tight text-stroke hover:text-main`}
         >
+          <a href="/">
           Nikholas Pcenicni
+          </a>
         </span>
       </div>
       <div className="block lg:hidden">
