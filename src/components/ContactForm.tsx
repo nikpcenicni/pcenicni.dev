@@ -38,7 +38,16 @@ const ContactForm: React.FC<{ fields: FieldProps[] }> = ({ fields }) => {
 
   return (
     <div className="pt-16">
-    <form onSubmit={handleSubmit} className="max-w-lg mx-auto">
+    <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+      <input type="text" name="name" />
+      <input type="text" name="phone" />
+      <input type="email" name="email" />
+      <input type="text" name="budget" />
+      <input type="text" name="projectDetails" />
+      <textarea name="message"></textarea>
+    </form>
+    <form onSubmit={handleSubmit} className="max-w-lg mx-auto" >
+    <input type="hidden" name="form-name" value="contact" />
       {fields.map(({ name, label, type, required, placeholder }) => (
         <div key={name} className="mb-4">
           <label htmlFor={name} className="block text-gray-700 font-bold mb-2">
