@@ -1,6 +1,12 @@
-import { useState } from 'react';
+interface ProjectCardProps {
+  title: string;
+  imageSrc: string;
+  description: string;
+  link: string;
+  onClick: () => void;
+}
 
-const ProjectCard = ({ title, imageSrc, description, link, onClick }) => {
+const ProjectCard = ({ title, imageSrc, description, link, onClick }: ProjectCardProps) => {
   return (
     <>
       <div className="m-6 cursor-pointer" onClick={onClick}>
