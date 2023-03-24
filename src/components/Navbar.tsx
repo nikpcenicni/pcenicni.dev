@@ -44,13 +44,13 @@ const Navbar = () => {
       </div>
       <div className="block lg:hidden">
         <button
-          className={`flex items-center px-3 py-2 border rounded text-stroke border-stroke`}
+          className={`flex items-center px-3 py-2 border rounded text-stroke border-stroke w-10`}
           onClick={toggleMenu}
         >
           {isOpen ? (
-            <FontAwesomeIcon icon={faTimes} />
+            <FontAwesomeIcon icon={faTimes} className="mx-auto" />
           ) : (
-            <FontAwesomeIcon icon={faBars} />
+            <FontAwesomeIcon icon={faBars} className="mx-auto" />
           )}
         </button>
       </div>
