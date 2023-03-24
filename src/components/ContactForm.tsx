@@ -1,76 +1,68 @@
-import { useState } from 'react';
-import { useForm } from 'react-hook-form';
-import axios from 'axios';
+import React, { useState } from "react";
+import axios from "axios";
 
 interface FieldProps {
   name: string;
   label: string;
   type: string;
   required: boolean;
+  placeholder?: string;
 }
 
-interface ContactFormProps {
-  fields: FieldProps[];   
-  buttonText: string;
-}
+const ContactForm: React.FC<{ fields: FieldProps[] }> = ({ fields }) => {
+  const [formData, setFormData] = useState<{ [key: string]: string }>({});
 
-const ContactForm = ({ fields, buttonText }: ContactFormProps) => {
-  const { register, handleSubmit, formState: { errors } } = useForm();
-  const [submitting, setSubmitting] = useState(false);
-  const [submitError, setSubmitError] = useState('');
+  const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    const { name, value } = event.target;
+    setFormData((prevFormData) => ({
+      ...prevFormData,
+      [name]: value,
+    }));
+  };
 
-  const onSubmit = async (data: any) => {
-    setSubmitting(true);
-    setSubmitError('');
+  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
 
     try {
-      const response = await axios.post('/.netlify/functions/contact', data);
+      const response = await axios.post("/.netlify/functions/process-form", formData);
 
-      if (response.status !== 200) {
-        throw new Error('Failed to submit form');
+      if (response.status === 200) {
+        console.log("Form submitted successfully");
+      } else {
+        console.error("Form submission failed");
       }
-
-      setSubmitting(false);
-      alert('Form submitted successfully');
-    } catch (error:any) {
-      setSubmitting(false);
-      setSubmitError(error.message);
+    } catch (error) {
+      console.error(error);
     }
   };
 
   return (
-    <div className='pt-20'>
-      <div className='mt-10 w-1/2 mx-auto border-4 rounded-xl'>
-        <h1 className='text-2xl font-bold mb-2 p-4 border-b-4 bg-greenblue text-main border-stroke rounded-t-lg'>Tell Me About It</h1>
-        
-        <form onSubmit={handleSubmit(onSubmit)} className="p-4">
-          {fields.map(({ name, label, type, required }) => (
-            <div key={name} className="mb-4">
-              <label htmlFor={name} className="block mb-2 font-semibold">{label}</label>
-              <input
-                type={type}
-                id={name}
-                {...register(name, { required })}
-                className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-              />
-              <input type="hidden" name="form-name" value="contact" />
-              {errors[name] && (
-                <div className="mt-1 text-red-500">{label} is required.</div>
-              )}
-            </div>
-          ))}
-          {submitError && (
-            <div className="mt-4 text-red-500">{submitError}</div>
-          )}
-          <button
-            type="submit"
-            disabled={submitting}
-            className="w-full px-4 py-2 text-white bg-blue-500 rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500"
-          >
-            {submitting ? 'Submitting...' : buttonText}
-          </button>
-        </form>
-      </div>
+    <div className="pt-16">
+    <form onSubmit={handleSubmit} className="max-w-lg mx-auto">
+      {fields.map(({ name, label, type, required, placeholder }) => (
+        <div key={name} className="mb-4">
+          <label htmlFor={name} className="block text-gray-700 font-bold mb-2">
+            {label}
+            {required && <span className="text-red-500 ml-1">*</span>}
+          </label>
+          <input
+            type={type}
+            name={name}
+            id={name}
+            placeholder={placeholder}
+            className="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            onChange={handleInputChange}
+            required={required}
+          />
+        </div>
+      ))}
+      <button
+        type="submit"
+        className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+      >
+        Submit
+      </button>
+    </form>
     </div>
   );
 };
