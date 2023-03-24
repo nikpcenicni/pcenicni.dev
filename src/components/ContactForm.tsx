@@ -18,37 +18,12 @@ const ContactForm = ({ fields, buttonText }: ContactFormProps) => {
   const [submitting, setSubmitting] = useState(false);
   const [submitError, setSubmitError] = useState('');
 
-  const onSubmit = async (data: any) => {
-    try {
-      setSubmitting(true);
-      setSubmitError('');
-
-      const response = await fetch('/', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/x-www-form-urlencoded'
-        },
-        body: new URLSearchParams(data).toString()
-      });
-
-      if (!response.ok) {
-        throw new Error('Network response was not ok');
-      }
-
-      setSubmitting(false);
-      alert('Thank you for your submission!');
-    } catch (error) {
-      setSubmitting(false);
-      setSubmitError('An error occurred while submitting the form. Please try again later.');
-    }
-  };
-
   return (
     <div className='pt-20'>
       <div className='mt-10 w-1/2 mx-auto border-4 rounded-xl'>
         <h1 className='text-2xl font-bold mb-2 p-4 border-b-4 bg-greenblue text-main border-stroke rounded-t-lg'>Tell Me About It</h1>
         
-        <form data-netlify="true" name="contact" onSubmit={handleSubmit(onSubmit)} className="p-4">
+        <form data-netlify="true" name="contact" method="POST" className="p-4">
           {fields.map(({ name, label, type, required }) => (
             <div key={name} className="mb-4">
               <label htmlFor={name} className="block mb-2 font-semibold">{label}</label>
