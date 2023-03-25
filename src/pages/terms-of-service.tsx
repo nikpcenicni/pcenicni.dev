@@ -18,61 +18,47 @@ export default function TermsOfService() {
                     <h3 className="text-4xl text-main font-medium mb-2">Terms of Service</h3>
                 </div>
                 <div className='p-4'>
-                    <h2 className='text-2xl font-bold'>Introduction</h2>
+                    
                     <p className="text-stroke text-lg">
-                    At our website, we value the privacy of our users and are committed to protecting it. This privacy policy explains the types of information we collect from users, how we use it, and who we share it with. By using our website, you agree to the terms of this policy.
+                    Welcome to Pcenicni.dev. If you continue to browse and use this website, you are agreeing to comply with and be bound by the following terms and conditions of use. If you disagree with any part of these terms and conditions, please do not use my website.
                     </p>
-                    <h2 className='text-2xl font-bold'>Types of Information Collected:</h2>
                     <p className="text-stroke text-lg">
-                    We may collect personal information such as name, email address, and phone number, as well as technical information like IP address, browser type, and operating system. We may also collect information about how users interact with our website, such as the pages they visit and the links they click.
+                    The term "I" or "me" refers to the owner of the website. The term "you" refers to the user or viewer of my website.
                     </p>
-                    <h2 className='text-2xl font-bold'>
-                    Use of Information:
-                    </h2>
-                    <p className="text-stroke text-lg">
-                    We use the information we collect to personalize the user experience, improve our website, and communicate with users via email or social media. We may also use the information to respond to user inquiries or to send marketing messages.
+                    <p className='text-stroke text-lg'>
+                    The use of this website is subject to the following terms of use:
                     </p>
-                    <h2 className='text-2xl font-bold'>
-                    Sharing of Information:
-                    </h2>
+                    <ul className='text-stroke text-lg list-decimal p-4'>
+                      <li>
+                      The content of the pages of this website is for your general information and use only. It is subject to change without notice.
+                      </li>
+                      <li>
+                      This website uses cookies to monitor browsing preferences. If you do allow cookies to be used, personal information may be stored by us for use by third parties.
+                      </li>
+                      <li>
+                      Neither I nor any third parties provide any warranty or guarantee as to the accuracy, timeliness, performance, completeness or suitability of the information and materials found or offered on this website for any particular purpose. You acknowledge that such information and materials may contain inaccuracies or errors and I expressly exclude liability for any such inaccuracies or errors to the fullest extent permitted by law.
+                      </li>
+                      <li>
+                      Your use of any information or materials on this website is entirely at your own risk, for which I shall not be liable. It shall be your own responsibility to ensure that any products, services or information available through this website meet your specific requirements.
+                      </li>
+                      <li>
+                      This website contains material which is owned by or licensed to me. This material includes, but is not limited to, the design, layout, look, appearance and graphics. Reproduction is prohibited other than in accordance with the copyright notice, which forms part of these terms and conditions.
+                      </li>
+                      <li>
+                      All trademarks reproduced in this website, which are not the property of, or licensed to me, are acknowledged on the website.
+                      </li>
+                      <li>
+                      Unauthorized use of this website may give rise to a claim for damages and/or be a criminal offence.
+                      </li>
+                      <li>
+                      From time to time, this website may also include links to other websites. These links are provided for your convenience to provide further information. They do not signify that I endorse the website(s). I have no responsibility for the content of the linked website(s).
+                      </li>
+                      <li>
+                      Your use of this website and any dispute arising out of such use of the website is subject to the laws of Canada.
+                      </li>
+                    </ul>
                     <p className="text-stroke text-lg">
-                    We may share user information with third-party service providers such as Google Analytics, social media platforms, or payment processors. These service providers use the information to help us analyze website usage or process payments. We take steps to ensure that these third parties protect user privacy.
-                    </p>
-                    <h2 className='text-2xl font-bold'>
-                    Cookies and Tracking Technologies:
-                    </h2>
-                    <p className="text-stroke text-lg">
-                    We use cookies and other tracking technologies to enhance the user experience and to track website usage. Third-party cookies may also be used to provide personalized ads or social media integration. Users can opt-out of cookies by adjusting their browser settings.
-                    </p>
-                    <h2 className='text-2xl font-bold'>
-                    Data Security:
-                    </h2>
-                    <p className="text-stroke text-lg">
-                    We take steps to protect user data, including physical, electronic, and procedural safeguards. We limit access to user data and use encryption to protect sensitive information. However, no method of data transmission over the internet can be guaranteed as completely secure.
-                    </p>
-                    <h2 className='text-2xl font-bold'>
-                    Your Rights:
-                    </h2>
-                    <p className="text-stroke text-lg">
-                    Users have the right to access, update, or delete their data. Users can also unsubscribe from marketing messages at any time. To exercise these rights or to inquire about their data, users can contact us using the information provided below.
-                    </p>
-                    <h2 className='text-2xl font-bold'>
-                    Updates to Privacy Policy:
-                    </h2>
-                    <p className="text-stroke text-lg">
-                    We may update this privacy policy from time to time. Users will be notified of any changes through a notice on our website. By continuing to use our website after any changes, users accept the new policy.
-                    </p>
-                    <h2 className='text-2xl font-bold'>
-                    Contact Information:
-                    </h2>
-                    <p className="text-stroke text-lg">
-                    If you have any questions or concerns about this privacy policy, please contact us <Link href="/contact" className='hover:text-greenblue'> by clicking here</Link>.
-                    </p>
-                    <h2 className='text-2xl font-bold'>
-                    Legal Notices:
-                    </h2>
-                    <p className="text-stroke text-lg">
-                    Please also refer to our <Link href="/terms-of-service" className='hover:text-greenblue'>Terms of Service</Link> for additional legal notices that apply to our website.
+                    By using my website, you agree to be bound by these terms of service. If you have any questions or concerns about these terms, please contact me.
                     </p>
                 </div>
           </div>

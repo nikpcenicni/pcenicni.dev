@@ -29,9 +29,6 @@ const About = () => {
             github='https://github.com/nikpcenicni'
             linkedin='https://www.linkedin.com/in/nikholaspcenicni/'
             twitter='https://twitter.com/nikpcenicni'
-            instagram='https://www.instagram.com/nikpcenicni/'
-            facebook='https://www.facebook.com/nikpcenicni'
-            snapchat='https://www.snapchat.com/add/nikpcenicni'
             />
         </div>
       </div>
