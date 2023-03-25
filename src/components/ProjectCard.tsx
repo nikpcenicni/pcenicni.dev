@@ -9,9 +9,9 @@ interface ProjectCardProps {
 const ProjectCard = ({ title, imageSrc, description, link, onClick }: ProjectCardProps) => {
   return (
     <>
-      <div className="m-6 cursor-pointer" onClick={onClick}>
+      <div className="m-6 cursor-pointer w-11/12 mx-auto" onClick={onClick}>
         <div className="relative rounded-2xl border-4 border-zinc-800 drop-shadow-xl hover:drop-shadow-2xl">
-            <div className="bg-greenblue rounded-t-xl p-4 border-b-4 border-stroke">
+            <div className="bg-greenblue rounded-t-xl px-4 pt-2 border-b-4 border-stroke">
                 <h3 className="text-2xl font-bold text-main font-medium mb-2">{title}</h3>
             </div>
             <div className="rounded-b-xl overflow-hidden">

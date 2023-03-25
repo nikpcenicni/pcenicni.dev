@@ -2,23 +2,37 @@ import Navbar from '../components/Navbar'
 import React from 'react';
 import AboutMeCard from '@/components/AboutMeCard';
 import Footer from '@/components/Footer';
+import GenericCard from '@/components/GenericCard';
+import LinksCard from '@/components/LinksCard';
 
 const About = () => {
   return (
     <>
       <Navbar/>
-      <div className='w-full h-screen'>
+      <div className='w-full h-full'>
 
 
-        <div className='w-11/12 lg:w-1/2 mx-auto pt-20'>
+        <div className='mx-auto pt-20'>
           <AboutMeCard
             title="About Me"
             imageSrc="https://source.unsplash.com/random/1600x1600" 
             name="Nikholas Pcenicni"
             blurb="Full-Stack Developer"
-            description={''} 
-            link={''}
+            description={"I have a bachelors degree in computer science from Laurentian University. I have worked on projects ranging from small personal projects to large enterprise applications."} 
           />
+          <GenericCard
+            title="Skills"
+            content={"I have experience with a wide range of technologies. I have worked with Java, C#, Python, JavaScript, React, Angular, Node, and many more."}
+          />
+          <LinksCard
+            title="Links"
+            github='https://github.com/nikpcenicni'
+            linkedin='https://www.linkedin.com/in/nikholaspcenicni/'
+            twitter='https://twitter.com/nikpcenicni'
+            instagram='https://www.instagram.com/nikpcenicni/'
+            facebook='https://www.facebook.com/nikpcenicni'
+            snapchat='https://www.snapchat.com/add/nikpcenicni'
+            />
         </div>
       </div>
       <Footer/>
