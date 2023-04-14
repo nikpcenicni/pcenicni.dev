@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Link from 'next/link';
@@ -23,6 +23,7 @@ const links = [
 ];
 
 const Navbar = () => {
+  const panelRef = useRef(null);
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -71,6 +72,12 @@ const Navbar = () => {
           ))}
         </div>
       </div>
+      {isOpen && (
+        <div
+          className="fixed top-0 left-0 bottom-0 right-0 -z-50"
+          onClick={() => setIsOpen(false)}
+        />
+      )}
     </nav>
   );
 };

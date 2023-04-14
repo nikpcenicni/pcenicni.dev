@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 interface ProjectCardProps {
   title: string;
   imageSrc: string;
@@ -14,8 +16,13 @@ const ProjectCard = ({ title, imageSrc, description, link, onClick }: ProjectCar
             <div className="bg-greenblue rounded-t-xl px-4 pt-2 border-b-4 border-stroke">
                 <h3 className="text-2xl font-bold text-main font-medium mb-2">{title}</h3>
             </div>
-            <div className="rounded-b-xl overflow-hidden">
-                <img src={imageSrc} alt={title} className="w-full" />
+            <div className="rounded-b-xl overflow-hidden w-full">
+                <Image 
+                  src={imageSrc} 
+                  alt={title} 
+                  width={500}
+                  height={300}
+                  className="w-full h-10/12" />
             </div>
         </div>
       </div>

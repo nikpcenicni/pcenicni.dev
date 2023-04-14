@@ -1,30 +1,24 @@
 [
     {
-    "id": 1,
-    "title": "Sudbury.News",
-    "imageSrc": "https://source.unsplash.com/random/300x200",
-    "description": "This site is a news aggregator for Sudbury, Ontario. It is built using wordpress and pulls the data for the news articles from the local news RSS feeds. This site was built for a client who wanted to have a news site that was easy to update and maintain. It is SEO optimized and is built using the latest web technologies. It has climbed in number of visitors and is on track to reach 1000 mothly clicks.",
-    "link": "https://www.sudbury.news/"
+        "id": 1,
+        "title": "Twitter Data Miner",
+        "imageSrc": "https://www.investopedia.com/thmb/jYnT8Y4jjIry7pAXp_ftupGLbRc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/shutterstock_216247747twtr-5bfc324346e0fb00517d2976.jpg",
+        "description": "This project was created as a way to determine the sentiment associated with a given tweet. Users are able to enter username and either select tweet replies or mentions and analyze the sentiment that is associated with them.",
+        "link": "https://github.com/nikpcenicni/Twitter-Dataminer"
     },
     {
-    "id": 2,
-    "title": "Project 2",
-    "imageSrc": "https://source.unsplash.com/random/300x200",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce pulvinar pretium odio sit amet dictum.",
-    "link": "https://www.google.com/"
+        "id": 1,
+        "title": "Sudbury.News",
+        "imageSrc": "http://pecnicni.dev/sudburynews.webp",
+        "description": "This site is a news aggregator for Sudbury, Ontario. It is built using wordpress and pulls the data for the news articles from the local news RSS feeds. This site was built for a client who wanted to have a news site that was easy to update and maintain. It is SEO optimized and is built using the latest web technologies. It has climbed in number of visitors and is on track to reach 1000 mothly clicks.",
+        "link": "https://www.sudbury.news/"
     },
     {
-    "id": 3,
-    "title": "Project 3",
-    "imageSrc": "https://source.unsplash.com/random/300x200",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce pulvinar pretium odio sit amet dictum.",
-    "link": "https://www.google.com/"
-    },
-    {
-    "id": 4,
-    "title": "Project 4",
-    "imageSrc": "https://source.unsplash.com/random/300x200",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce pulvinar pretium odio sit amet dictum.",
-    "link": "https://www.google.com/"
+        "id": 2,
+        "title": "Kayley Hennessy Portfolio",
+        "imageSrc": "https://lh3.googleusercontent.com/pw/AJFCJaUvYJQs9pR1Rei8X1xlCQwNhmRY653kPs0rUwfsiczkgmihBJv5f8iMsA-Lt0hvDIS-xh7V3f6xvscQOk2tMVyJLYT01yU5QebLLtqSci5wMD-a1MCL43py6JAsm-2q2IItdMyRLUyLv_y65AGa7UToGg=w2926-h1950-s-no?authuser=0",
+        "description": "This is a portfolio site built to showcase the work of Kayley Hennessy. It was built using next.js with custom built components. It is SEO optimized and is built using the latest web technologies.",
+        "link": "https://kayleyhennessy.ca/"
     }
+
 ]

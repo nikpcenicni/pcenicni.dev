@@ -3,7 +3,6 @@ import Hero from '../components/Hero'
 import PortfolioHero from '../components/PortfolioHero'
 import Footer from '@/components/Footer'
 
-
 export default function Home() {
   return (
     <>
