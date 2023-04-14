@@ -16,6 +16,7 @@ const Portfolio = () => {
   const [modalOpen, setModalOpen] = useState(false);
   const [currentProject, setCurrentProject] = useState<ProjectType | null>(null);
   const projects: ProjectType[] = require('../projects.json');
+  projects.reverse();
 
   const openModal = (project: ProjectType) => {
     setCurrentProject(project);
@@ -33,7 +34,7 @@ const Portfolio = () => {
       <div className="container mx-auto py-8 pt-16">
         <h1 className="mt-12 text-4xl md:text-5xl lg:text-6xl text-center font-bold text-stroke mx-4">Check Out Some Of My Projects</h1>
         <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 pt-10">
-          {projects.reverse().map((project) => (
+          {projects.map((project) => (
             <ProjectCard
               key={project.id}
               title={project.title}

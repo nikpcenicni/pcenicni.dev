@@ -14,7 +14,7 @@ interface ProjectType {
 const PortfolioHero = () => {
   const [modalOpen, setModalOpen] = useState(false);
   const [currentProject, setCurrentProject] = useState<ProjectType | null>(null);
-  const projects: ProjectType[] = require('../projects.json').slice(-3); // modify this line
+  const projects: ProjectType[] = require('../projects.json').slice(0,3); // modify this line
 
   const openModal = (project: ProjectType) => {
     setCurrentProject(project);

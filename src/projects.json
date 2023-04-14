@@ -1,24 +1,51 @@
 [
     {
-        "id": 1,
-        "title": "Twitter Data Miner",
-        "imageSrc": "https://www.investopedia.com/thmb/jYnT8Y4jjIry7pAXp_ftupGLbRc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/shutterstock_216247747twtr-5bfc324346e0fb00517d2976.jpg",
-        "description": "This project was created as a way to determine the sentiment associated with a given tweet. Users are able to enter username and either select tweet replies or mentions and analyze the sentiment that is associated with them.",
-        "link": "https://github.com/nikpcenicni/Twitter-Dataminer"
+        "id": 7,
+        "title": "Kayley Hennessy Portfolio",
+        "imageSrc": "https://lh3.googleusercontent.com/pw/AJFCJaUvYJQs9pR1Rei8X1xlCQwNhmRY653kPs0rUwfsiczkgmihBJv5f8iMsA-Lt0hvDIS-xh7V3f6xvscQOk2tMVyJLYT01yU5QebLLtqSci5wMD-a1MCL43py6JAsm-2q2IItdMyRLUyLv_y65AGa7UToGg=w2926-h1950-s-no?authuser=0",
+        "description": "This is a portfolio site built to showcase the work of Kayley Hennessy. It was built using next.js with custom built components. It is SEO optimized and is built using the latest web technologies.",
+        "link": "https://kayleyhennessy.ca/"
     },
     {
-        "id": 1,
+        "id": 6,
         "title": "Sudbury.News",
         "imageSrc": "https://sudbury.news/wp-content/uploads/2023/04/Copy-of-Original-size-Sudbury-News-Logo_2_2.webp",
         "description": "This site is a news aggregator for Sudbury, Ontario. It is built using wordpress and pulls the data for the news articles from the local news RSS feeds. This site was built for a client who wanted to have a news site that was easy to update and maintain. It is SEO optimized and is built using the latest web technologies. It has climbed in number of visitors and is on track to reach 1000 mothly clicks.",
         "link": "https://www.sudbury.news/"
     },
     {
+        "id": 5,
+        "title": "Twitter Data Miner",
+        "imageSrc": "https://www.investopedia.com/thmb/jYnT8Y4jjIry7pAXp_ftupGLbRc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/shutterstock_216247747twtr-5bfc324346e0fb00517d2976.jpg",
+        "description": "This project was created as a way to determine the sentiment associated with a given tweet. Users are able to enter username and either select tweet replies or mentions and analyze the sentiment that is associated with them.",
+        "link": "https://github.com/nikpcenicni/Twitter-Dataminer"
+    },
+    {
+        "id": 4,
+        "title": "Dhar Man TikTok Botr",
+        "imageSrc": "",
+        "description": "This project was created as a way to determine the sentiment associated with a given tweet. Users are able to enter username and either select tweet replies or mentions and analyze the sentiment that is associated with them.",
+        "link": "https://github.com/nikpcenicni/Twitter-Dataminer"
+    },
+    {
+        "id": 3,
+        "title": "NACHOS",
+        "imageSrc": "",
+        "description": "This project was created as a way to determine the sentiment associated with a given tweet. Users are able to enter username and either select tweet replies or mentions and analyze the sentiment that is associated with them.",
+        "link": "https://github.com/nikpcenicni/Twitter-Dataminer"
+    },
+    {
         "id": 2,
-        "title": "Kayley Hennessy Portfolio",
-        "imageSrc": "https://lh3.googleusercontent.com/pw/AJFCJaUvYJQs9pR1Rei8X1xlCQwNhmRY653kPs0rUwfsiczkgmihBJv5f8iMsA-Lt0hvDIS-xh7V3f6xvscQOk2tMVyJLYT01yU5QebLLtqSci5wMD-a1MCL43py6JAsm-2q2IItdMyRLUyLv_y65AGa7UToGg=w2926-h1950-s-no?authuser=0",
-        "description": "This is a portfolio site built to showcase the work of Kayley Hennessy. It was built using next.js with custom built components. It is SEO optimized and is built using the latest web technologies.",
-        "link": "https://kayleyhennessy.ca/"
+        "title": "NPX Card",
+        "imageSrc": "",
+        "description": "This project was created as a way to determine the sentiment associated with a given tweet. Users are able to enter username and either select tweet replies or mentions and analyze the sentiment that is associated with them.",
+        "link": "https://github.com/nikpcenicni/Twitter-Dataminer"
+    },
+    {
+        "id": 1,
+        "title": "Netflix Lightmode",
+        "imageSrc": "https://cdn.cookielaw.org/logos/dd6b162f-1a32-456a-9cfe-897231c7763c/4345ea78-053c-46d2-b11e-09adaef973dc/Netflix_Logo_PMS.png",
+        "description": "This project was created as part of a class in User Interface Design. The goal of the project was to create implement a UI change in an existing web site or service. I decided on creating a lightmode version of the Netflix website. The project was built using HTML, CSS, and Javascript and can be installed as a chrome extension.",
+        "link": "https://github.com/nikpcenicni/Netflix"
     }
-
 ]
