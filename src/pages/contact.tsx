@@ -12,12 +12,13 @@ const fields = [
 export default function Contact() {
   return (
     <>
-      <Navbar />
       <div className='h-screen'>
-      <ContactForm fields={fields}/>
-      </div>
-      <Footer/>
+      <Navbar />
       
+      <ContactForm fields={fields}/>
+      
+      <Footer/>
+      </div>
     </>
   )
 }
