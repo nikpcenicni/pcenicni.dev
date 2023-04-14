@@ -22,24 +22,24 @@
     },
     {
         "id": 4,
-        "title": "Dhar Man TikTok Botr",
-        "imageSrc": "",
-        "description": "This project was created as a way to determine the sentiment associated with a given tweet. Users are able to enter username and either select tweet replies or mentions and analyze the sentiment that is associated with them.",
-        "link": "https://github.com/nikpcenicni/Twitter-Dataminer"
+        "title": "Dhar Mann TikTok Bot",
+        "imageSrc": "https://www.investopedia.com/thmb/vE2Lmd5C8dUW_7G75XDyKzQDc6A=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/tiktok-b003064e1dfa4459bd31c37e7db390a1.jpg",
+        "description": "This is a TikTok bot to create the low effort content that is commonly found on tiktok which consists of a dhar mann video on the top with either a video of game play, or some sensory video on the bottom.",
+        "link": "https://github.com/nikpcenicni/Dhar-Mann-TikTok-Bot"
     },
     {
         "id": 3,
-        "title": "NACHOS",
-        "imageSrc": "",
-        "description": "This project was created as a way to determine the sentiment associated with a given tweet. Users are able to enter username and either select tweet replies or mentions and analyze the sentiment that is associated with them.",
-        "link": "https://github.com/nikpcenicni/Twitter-Dataminer"
+        "title": "NachOS",
+        "imageSrc": "https://www.cs.washington.edu/homes/tom/nachos/nachos.jpg",
+        "description": "NACHO stands for Not Another Completely Heuristic Operating System. It was created as part of a class in Operating Systems. The goal of the project was to create a simple operating system that could run on a virtual machine.",
+        "link": "https://github.com/nikpcenicni/nachos"
     },
     {
         "id": 2,
         "title": "NPX Card",
-        "imageSrc": "",
-        "description": "This project was created as a way to determine the sentiment associated with a given tweet. Users are able to enter username and either select tweet replies or mentions and analyze the sentiment that is associated with them.",
-        "link": "https://github.com/nikpcenicni/Twitter-Dataminer"
+        "imageSrc": "https://res.cloudinary.com/practicaldev/image/fetch/s--uJeZRzHS--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://pbs.twimg.com/media/DuzZACYUUAEmSlT.png",
+        "description": "This project is a simple npx card that can be used to display information about myself. It was created using node.js and can be installed using npx.",
+        "link": "https://github.com/nikpcenicni/npx-card"
     },
     {
         "id": 1,

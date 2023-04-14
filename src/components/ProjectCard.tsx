@@ -22,7 +22,7 @@ const ProjectCard = ({ title, imageSrc, description, link, onClick }: ProjectCar
                   alt={title} 
                   width={500}
                   height={300}
-                  className="w-full h-10/12" />
+                  className="w-full" />
             </div>
         </div>
       </div>
