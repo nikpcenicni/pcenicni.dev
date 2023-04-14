@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import React from 'react';
-
+import Image from 'next/image';
 interface HeroProps {
   backgroundImage: string;
   title: string;
@@ -13,9 +13,12 @@ function Hero({ backgroundImage, title, subtext, ctaText, ctaLink }: HeroProps) 
   return (
     <div className="relative overflow-hidden py-16">
       {/* Background image */}
-      <img
+      <Image
         src={backgroundImage}
         alt=""
+        layout="fill"
+        width={1600}
+        height={900}
         className="absolute top-0 left-0 w-full h-full object-cover z-0"
       />
       {/* Overlay */}

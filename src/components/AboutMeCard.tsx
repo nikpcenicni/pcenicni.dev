@@ -1,3 +1,4 @@
+import Image from "next/image";
 interface AboutMeCardProps {
     title: string;
     imageSrc: string;
@@ -16,7 +17,12 @@ interface AboutMeCardProps {
                   <h3 className="text-3xl text-main font-medium mb-2">{title}</h3>
               </div>
               <div className="overflow-hidden w-full py-4 flex">
-                  <img src={imageSrc} alt={title} className="w-1/2 mx-auto rounded-xl" />
+                  <Image
+                    src={imageSrc} 
+                    alt={title} 
+                    width={500}
+                    height={500}
+                    className="w-1/2 mx-auto rounded-xl" />
               </div>
               <div className="w-full px-4">
                   <h3 className="text-xl text-center text-stroke font-medium mb-2">{"Hi, I'm " + name}</h3>

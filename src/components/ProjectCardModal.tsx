@@ -36,7 +36,12 @@ const Projectcardmodal: React.FC<ProjectcardmodalProps> = ({ id, title, imageSrc
             </div>
             <div className="place-content-center">
               <div className="flex justify-center items-center">
-                <img src={imageSrc} alt={title} className="rounded-xl w-11/12 md:w-5/6 lg:w-2/3 xl:w-1/2" />
+                <Image 
+                  src={imageSrc} 
+                  alt={title} 
+                  width={500}
+                  height={300}
+                  className="rounded-xl w-11/12 md:w-5/6 lg:w-2/3 xl:w-1/2" />
               </div>
             </div>
 
