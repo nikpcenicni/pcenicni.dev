@@ -23,7 +23,7 @@ export default function TermsOfService() {
                     Welcome to Pcenicni.dev. If you continue to browse and use this website, you are agreeing to comply with and be bound by the following terms and conditions of use. If you disagree with any part of these terms and conditions, please do not use my website.
                     </p>
                     <p className="text-stroke text-lg">
-                    The term "I" or "me" refers to the owner of the website. The term "you" refers to the user or viewer of my website.
+                    The term I or me refers to the owner of the website. The term you refers to the user or viewer of my website.
                     </p>
                     <p className='text-stroke text-lg'>
                     The use of this website is subject to the following terms of use:
@@ -58,7 +58,7 @@ export default function TermsOfService() {
                       </li>
                     </ul>
                     <p className="text-stroke text-lg">
-                    By using my website, you agree to be bound by these terms of service. If you have any questions or concerns about these terms, please contact me.
+                      By using my website, you agree to be bound by these terms of service. If you have any questions or concerns about these terms, please contact me.
                     </p>
                 </div>
           </div>
