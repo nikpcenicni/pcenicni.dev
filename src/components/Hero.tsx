@@ -16,7 +16,6 @@ function Hero({ backgroundImage, title, subtext, ctaText, ctaLink }: HeroProps) 
       <Image
         src={backgroundImage}
         alt=""
-        layout="fill"
         width={1600}
         height={900}
         className="absolute top-0 left-0 w-full h-full object-cover z-0"
