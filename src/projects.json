@@ -9,7 +9,7 @@
     {
         "id": 1,
         "title": "Sudbury.News",
-        "imageSrc": "http://pecnicni.dev/sudburynews.webp",
+        "imageSrc": "http://www.pecnicni.dev/sudburynews.webp",
         "description": "This site is a news aggregator for Sudbury, Ontario. It is built using wordpress and pulls the data for the news articles from the local news RSS feeds. This site was built for a client who wanted to have a news site that was easy to update and maintain. It is SEO optimized and is built using the latest web technologies. It has climbed in number of visitors and is on track to reach 1000 mothly clicks.",
         "link": "https://www.sudbury.news/"
     },
