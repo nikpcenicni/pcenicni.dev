@@ -17,18 +17,17 @@ const About = () => {
             title="About Me"
             imageSrc="https://source.unsplash.com/random/1600x1600" 
             name="Nikholas Pcenicni"
-            blurb="Full-Stack Developer"
+            blurb="Developer"
             description={"I have a bachelors degree in computer science from Laurentian University. I have worked on projects ranging from small personal projects to large enterprise applications."} 
           />
           <GenericCard
             title="Skills"
-            content={"I have experience with a wide range of technologies. I have worked with Java, C#, Python, JavaScript, React, Angular, Node, and many more."}
+            content={"I have experience with a wide range of technologies. I have worked with Java, C#, Python, JavaScript, React, Angular, Node, and many more. My experience also includes azure, vmware, ansible, and service now. "}
           />
           <LinksCard
             title="Links"
             github='https://github.com/nikpcenicni'
             linkedin='https://www.linkedin.com/in/nikholaspcenicni/'
-            twitter='https://twitter.com/nikpcenicni'
             />
         </div>
       </div>
