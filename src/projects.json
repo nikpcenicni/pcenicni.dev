@@ -2,7 +2,7 @@
     {
         "id": 8,
         "title": "Tinder Wrapped",
-        "imageSrc": "https://lh3.googleusercontent.com/pw/AJFCJaUvYJQs9pR1Rei8X1xlCQwNhmRY653kPs0rUwfsiczkgmihBJv5f8iMsA-Lt0hvDIS-xh7V3f6xvscQOk2tMVyJLYT01yU5QebLLtqSci5wMD-a1MCL43py6JAsm-2q2IItdMyRLUyLv_y65AGa7UToGg=w2926-h1950-s-no?authuser=0",
+        "imageSrc": "https://pcenicni.dev/tinder.jpg",
         "description": "Look at your year in review with Tinder Wrapped. This works by requesting a copy of your data as required by the GPDR, once you have obtained a copy of your data upload it to the site and it will parse the data to give your year stats of tinder. It was built using HTML, TailwindCSS, and Javascript for the json parsing. It runs on a docker container using Node.js to run host the server.",
         "link": "https://tinderwrapped.ca/"
     },
