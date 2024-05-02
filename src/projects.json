@@ -1,5 +1,12 @@
 [
     {
+        "id": 9,
+        "title": "BuzzBoyz",
+        "imageSrc": "https://buzzboyz.ca/images/logos/rectangle/black.svg",
+        "description": "Local Mosquito Control company based out of ottawa that commissioned a website. It was built using Next.JS with Typescript and TailwindCSS. It runs on a docker container using Node.js to run host the server.",
+        "link": "https://buzzboyz.ca/"
+    },
+    {
         "id": 8,
         "title": "Tinder Wrapped",
         "imageSrc": "https://pcenicni.dev/tinder.jpg",
