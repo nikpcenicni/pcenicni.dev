@@ -1,4 +1,11 @@
-[
+[    
+    {
+        "id": 10,
+        "title": "Dashplay.app",
+        "imageSrc": "https://dashplay.ca/og/og-default.png",
+        "description": "Enhance the built-in tesla theater by overloading the youtube app browser to unlock more media streaming services, and other web apps.",
+        "link": "https://dashplay.app/"
+    },
     {
         "id": 9,
         "title": "BuzzBoyz",
